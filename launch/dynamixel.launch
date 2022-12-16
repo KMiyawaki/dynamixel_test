@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find dynamixel_test)/launch/dynamixel_manager.launch"/>
+  <include file="$(find dynamixel_test)/launch/dynamixel_controller.launch"/>
+</launch>

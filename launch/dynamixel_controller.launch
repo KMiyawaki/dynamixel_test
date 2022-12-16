@@ -1,0 +1,7 @@
+<launch>
+  <!-- Start tilt joint controller -->
+  <rosparam file="$(find dynamixel_test)/config/dynamixel_controller.yaml" command="load" />
+  <node name="controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py" args="--manager=dynamixel_manager
+              --port dynamixel_port 
+              dynamixel_joint" output="screen" />
+</launch>
